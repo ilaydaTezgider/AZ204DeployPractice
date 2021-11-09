@@ -15,6 +15,11 @@ app.get('/api/merhaba', (req, res) => {
     res.send('Merhaba Dünyalı')
 })
 
+app.get('/api/deploy', (req, res) => {
+
+    res.send('Merhaba Deploy')
+})
+
 app.post('/api/name', (req, res) => {
 
     const body = _.pick(req.body, ['firstName','lastName'])
